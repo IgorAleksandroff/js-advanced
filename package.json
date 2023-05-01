@@ -1,23 +1,26 @@
 {
   "name": "book-app",
   "version": "1.0.0",
-  "description": "Cool book app",
+  "description": "",
   "main": "app.js",
+  "type": "module",
   "scripts": {
-    "live-s": "live-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "live-server",
+    "build": "rollup -c --Watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlariCode/8-javascript-advanced-1.git"
+    "url": "(https://github.com/IgorAleksandroff/js-advanced.git)"
   },
   "keywords": [
     "books"
   ],
-  "author": "Anton Larichev",
+  "author": "Igor",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AlariCode/8-javascript-advanced-1/issues"
-  },
-  "homepage": "https://purpleschool.ru"
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "eslint": "^8.39.0",
+    "rollup": "^3.21.2",
+    "rollup-plugin-import-css": "^3.2.1"
+  }
 }
